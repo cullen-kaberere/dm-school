@@ -1,0 +1,107 @@
+/* globals.css — clean version with pure CSS, no Tailwind */
+
+:root {
+  /* Color palette */
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --primary: #002147;
+  --secondary: #f0f0f0;
+  --accent: #0050b3;
+  --muted: #cccccc;
+  --border: #dddddd;
+  --radius: 10px;
+  --card: #ffffff;
+  --card-foreground: #1f1f1f;
+
+  /* Charts (optional) */
+  --chart-1: #3e8ed0;
+  --chart-2: #70a1ff;
+  --chart-3: #5352ed;
+  --chart-4: #2ed573;
+  --chart-5: #ffa502;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.footer {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-col {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+}
