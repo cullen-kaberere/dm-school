@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 export const metadata = {
-  title: "Mirema School Clone",
+  title: "Damacrest School",
   description: "The Best of Holistic Learning - A modern educational institution",
     generator: 'v0.dev'
 }
