@@ -14,19 +14,17 @@ export default function Header() {
   return (
     <header className="header">
       {/* Top Bar */}
-      <div className="top-bar">
+      {/* <div className="top-bar">
         <div className="container">
           <div className="top-bar-content">
-            <Link href="#" className="portal-link">
-              Learner portal
-            </Link>
+            
             <span className="separator">|</span>
             <Link href="#" className="portal-link">
               Parents portal
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Header */}
       <div className="main-header">
@@ -35,8 +33,8 @@ export default function Header() {
             {/* Logo */}
             <div className="logo">
               <Link href="/">
-                <img src="/logo-placeholder.png" alt="Mirema School Logo" width="50" height="50" />
-                <span className="logo-text">Mirema School</span>
+                <img src="/logopg.png" alt="Mirema School Logo"  />
+                {/* <span className="logo-text">Mirema School</span> */}
               </Link>
             </div>
 
@@ -49,6 +47,13 @@ export default function Header() {
               <NavLink href="/contact">Admissions</NavLink>
               <NavLink href="/services">Services</NavLink>
               <NavLink href="/contact">Contact</NavLink>
+              {/* <Link href="#" className="portal-link">
+              Learner portal
+            </Link>
+            <span className="separator">|</span>
+            <Link href="#" className="portal-link">
+              Parents portal
+            </Link> */}
             </nav>
 
             {/* Mobile Menu Button */}

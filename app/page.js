@@ -8,9 +8,9 @@ export default function HomePage() {
         <div className="hero-content">
           <h1>The Best of Holistic Learning</h1>
           <p>Nurturing minds, building futures, creating leaders of tomorrow</p>
-          <Link href="/about/bb" className="btn hero-btn">
+          {/* <Link href="/about/bb" className="btn hero-btn">
             Learn More About Us
-          </Link>
+          </Link> */}
         </div>
       </section>
 
