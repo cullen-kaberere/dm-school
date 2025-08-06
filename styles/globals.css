@@ -707,3 +707,345 @@ a:hover {
     display: none;
   }
 }
+/* new */
+/* Add to your globals.css */
+
+/* Program Icons */
+.icon-box {
+  background: rgba(0, 33, 71, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.program-icon {
+  font-size: 2rem;
+  color: #002147;
+}
+
+/* Stats Icons */
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Values Section */
+.values-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.value-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card h3 {
+  color: #002147;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.value-card h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #002147;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Quick Facts Bar */
+.quick-facts {
+  background: #002147;
+  color: white;
+  padding: 1rem 0;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.fact-icon {
+  font-size: 1.2rem;
+}
+
+/* Hero CTA */
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-btn-outline:hover {
+  background: white;
+  color: #002147;
+}
+
+/* Discover More Link */
+.discover-more {
+  margin-top: 2rem;
+}
+
+.discover-link {
+  color: #002147;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.discover-link:hover {
+  color: #0056b3;
+  gap: 0.8rem;
+}
+
+/* Program Cards */
+.program-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+}
+
+.program-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: #f8b739;
+  color: #002147;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.program-features {
+  list-style: none;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.program-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.program-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #002147;
+  font-weight: bold;
+}
+
+.program-cta {
+  color: #002147;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  border-bottom: 2px solid #002147;
+  padding-bottom: 0.3rem;
+}
+
+/* Why Choose Us */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.benefit-icon.academic {
+  background: #e3f2fd;
+}
+.benefit-icon.facilities {
+  background: #e8f5e9;
+}
+.benefit-icon.holistic {
+  background: #fff8e1;
+}
+.benefit-icon.community {
+  background: #f3e5f5;
+}
+
+/* Co-curricular */
+.activity-tabs {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 2rem 0;
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #666;
+  position: relative;
+}
+
+.tab-btn.active {
+  color: #002147;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #002147;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.activity-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.activity-icon {
+  font-size: 2rem;
+  color: #002147;
+  margin-bottom: 1rem;
+}
+
+/* Admissions CTA */
+.admissions-cta {
+  background: linear-gradient(rgba(0, 33, 71, 0.9), rgba(0, 33, 71, 0.9)),
+              url('/images/admissions-bg.jpg') center/cover;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.admissions-cta h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.admissions-cta p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #002147;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-cta-group, .cta-group {
+    flex-direction: column;
+  }
+  
+  .tab-nav {
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
